@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: gray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 15px;
+}
+
+h1{
+    color: yellow;
+}
+
+img{
+    width: 80%;
+    height: 10vh;
+}
+
+.card{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 25%;
+    height: 35vh;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.cards-votacao{
+    display: flex;
+}
+
+.botao-votar{
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.input-dados{
+    padding: 5px;
+    width: 70%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.inside-card{
+    width: 100%;
+    height: 35vh;
+    background: linear-gradient(to bottom, #4169e1, #1e90ff);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container{
+    margin: auto;
+    margin-top: 10px;
+    padding: 20px;
+    width: 50%;
+    height: 93vh;
+    background: linear-gradient(to bottom, rgb(32,13,35), rgb(100,31,112));
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: space-around;
+}
+
+form{
+    margin: auto;
+    width: 97%;
+    height: 70vh;
+    background: linear-gradient(to top, rgb(32,13,35), rgb(100,31,112));
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .cards-votacao{
+        flex-direction: column;
+        height: 50px;
+    }
+
+    .card{
+        height: 200px;
+    }
+
+    .inside-card{
+        height: 125px;
+    }
+
+    .container{
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    form{
+        height: 600px;
+        justify-content:flex-start;
+    }
+}
+
+
